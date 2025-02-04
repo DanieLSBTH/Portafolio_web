@@ -1,0 +1,54 @@
+.landing-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .menu button {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .gallery-section {
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .content-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-card, .login-card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    color: #003366;
+  }
+  
+  .subtitle {
+    margin: 10px 0 20px;
+    color: #555;
+  }
+  
+  .footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  

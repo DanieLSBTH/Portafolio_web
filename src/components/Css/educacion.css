@@ -1,0 +1,47 @@
+/* Estilos para el modal transparente */
+.modal-transparent .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .modal-transparent .modal-header {
+    border: none;
+  }
+  
+  .modal-transparent .modal-body {
+    padding: 0;
+  }
+
+  /* Estilos para el botón de cerrar */
+.btn-close-custom {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    border: none;
+    color: white;
+    border-radius: 50%; /* Forma de círculo */
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-close-custom:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el mouse */
+  }
+/* Estilos para las tarjetas de proyectos */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el reproductor de video */
+.video-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-play-icon {
+  cursor: pointer;
+}
