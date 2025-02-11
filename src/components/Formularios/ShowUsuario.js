@@ -15,6 +15,7 @@ import logo8 from '../Images/Cursos/javascript.png'; // Importa tu imagen
 import logo9 from '../Images/Cursos/responsive.jpg'; // Importa tu imagen
 import logo10 from '../Images/Cursos/sql.png'; // Importa tu imagen
 import logo11 from '../Images/Cursos/ia.jpg'; // Importa tu imagen
+import logo12 from '../Images/Cursos/cisco.jpg'; 
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false); // Estado para controlar el modal
@@ -86,6 +87,16 @@ const ShowUsuario = () => {
                 <FontAwesomeIcon icon={faCertificate} className="me-2" />
                 Certificaciones
               </h3>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Introducción a la ciberseguridad</h4>
+                <p className="text-muted">Cisco Networking Academy</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo12)}>
+                  Ver Certificado
+                </Button>
+              </Card>
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
