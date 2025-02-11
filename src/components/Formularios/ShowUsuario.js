@@ -90,7 +90,7 @@ const ShowUsuario = () => {
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
-                <h4>Introducción a la ciberseguridad</h4>
+                <h4>Introducción a la ciberseguridad <br /><br /></h4>
                 <p className="text-muted">Cisco Networking Academy</p>
                 <p className="text-muted">2025</p>
                 <Button color="primary" size="sm" onClick={() => openModal(logo12)}>
