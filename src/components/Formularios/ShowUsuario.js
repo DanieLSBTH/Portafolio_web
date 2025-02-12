@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Modal, ModalBody } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ProgressBar } from 'primereact/progressbar';
+import { ProgressSpinner } from 'primereact/progressspinner';
 import { faGraduationCap, faCertificate, faBook, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useSpring, animated } from '@react-spring/web';
 import '../Css/educacion.css';
@@ -87,6 +89,26 @@ const ShowUsuario = () => {
                 <FontAwesomeIcon icon={faCertificate} className="me-2" />
                 Certificaciones
               </h3>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Tecnico en Big Data <br /><br /></h4>
+                <p className="text-muted">Fundación Carlos Slim</p>
+                <p className="text-muted">2025</p>
+                <p className="text-muted">En proceso</p>
+                <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
+       
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Hacker ético <br /><br /></h4>
+                <p className="text-muted">Cisco Networking Academy</p>
+                <p className="text-muted">2025</p>
+                <p className="text-muted">En proceso</p>
+                <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
+       
+              </Card>
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
