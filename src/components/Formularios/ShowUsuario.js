@@ -18,6 +18,7 @@ import logo9 from '../Images/Cursos/responsive.jpg'; // Importa tu imagen
 import logo10 from '../Images/Cursos/sql.png'; // Importa tu imagen
 import logo11 from '../Images/Cursos/ia.jpg'; // Importa tu imagen
 import logo12 from '../Images/Cursos/cisco.jpg'; 
+import logo13 from '../Images/Cursos/IA_HELSINK.png';
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false); // Estado para controlar el modal
@@ -108,6 +109,16 @@ const ShowUsuario = () => {
                 <p className="text-muted">En proceso</p>
                 <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
        
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Elementos de la IA <br /><br /></h4>
+                <p className="text-muted">Universidad de Helsinki y Reaktor</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo13)}>
+                  Ver Certificado
+                </Button>
               </Card>
             </Col>
             <Col md={4} className="mb-4">
