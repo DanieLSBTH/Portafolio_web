@@ -19,6 +19,7 @@ import logo10 from '../Images/Cursos/sql.png'; // Importa tu imagen
 import logo11 from '../Images/Cursos/ia.jpg'; // Importa tu imagen
 import logo12 from '../Images/Cursos/cisco.jpg'; 
 import logo13 from '../Images/Cursos/IA_HELSINK.png';
+import logo14 from '../Images/Cursos/AWS_FSE.jpg';
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false); // Estado para controlar el modal
@@ -117,6 +118,16 @@ const ShowUsuario = () => {
                 <p className="text-muted">Universidad de Helsinki y Reaktor</p>
                 <p className="text-muted">2025</p>
                 <Button color="primary" size="sm" onClick={() => openModal(logo13)}>
+                  Ver Certificado
+                </Button>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>AWS Security Best Practices: Monitoring and Alerting<br /><br /></h4>
+                <p className="text-muted">AWS training certification</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo14)}>
                   Ver Certificado
                 </Button>
               </Card>
