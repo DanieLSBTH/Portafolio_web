@@ -114,20 +114,20 @@ const ShowUsuario = () => {
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
-                <h4>Elementos de la IA <br /><br /></h4>
-                <p className="text-muted">Universidad de Helsinki y Reaktor</p>
+                <h4>AWS Security Best Practices: Monitoring and Alerting<br /><br /></h4>
+                <p className="text-muted">AWS training certification</p>
                 <p className="text-muted">2025</p>
-                <Button color="primary" size="sm" onClick={() => openModal(logo13)}>
+                <Button color="primary" size="sm" onClick={() => openModal(logo14)}>
                   Ver Certificado
                 </Button>
               </Card>
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
-                <h4>AWS Security Best Practices: Monitoring and Alerting<br /><br /></h4>
-                <p className="text-muted">AWS training certification</p>
+                <h4>Elementos de la IA <br /><br /></h4>
+                <p className="text-muted">Universidad de Helsinki y Reaktor</p>
                 <p className="text-muted">2025</p>
-                <Button color="primary" size="sm" onClick={() => openModal(logo14)}>
+                <Button color="primary" size="sm" onClick={() => openModal(logo13)}>
                   Ver Certificado
                 </Button>
               </Card>
