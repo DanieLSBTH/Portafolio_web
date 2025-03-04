@@ -45,3 +45,8 @@
 .custom-play-icon {
   cursor: pointer;
 }
+.feature-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Ajusta este valor para cambiar el espacio */
+}

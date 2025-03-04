@@ -7,11 +7,16 @@ import postgresLogo from '../Images/images_banco/postgresql.png';
 import reactLogo from '../Images/images_banco/react.png';
 import nodeLogo from '../Images/images_banco/node.png';
 import oracleLogo from '../Images/images_banco/oracle.png';
+import personalogo1 from '../Images/images_banco/personlog1.png';
+import personalogo2 from '../Images/images_banco/personlog2.png';
+import '../Css/educacion.css';
+
 import { Link } from 'react-router-dom';
 
-import CarouselSection from '../Auth/CarouselSection'; // Importa el nuevo componente
-import CarouselSectionfar from '../Auth/CarouselSectionfar'; // Importa el nuevo componente
-import CarouselSectionreco from '../Auth/CarouselSectionreco'; // Importa el nuevo componente
+import CarouselSection from '../Auth/CarouselSection'; // Importando el nuevo componente
+import CarouselSectionfar from '../Auth/CarouselSectionfar'; // Importando el nuevo componente
+import CarouselSectionreco from '../Auth/CarouselSectionreco'; // Importando el nuevo componente
+import CarouselSectionPerson from '../Auth/CarouselSectionPerson'; // Importando el nuevo componente
 
 import ReactPlayer from 'react-player';
 import logo from '../Images/backgrounds/fondo_antigua_1.png';
@@ -40,6 +45,44 @@ const Dashboard = () => {
       {/* Hero Section */}
 
       {/* Mission Section */}
+
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      
+      <section className="mission-section py-3">
+        <Container className="mt-0">
+          <Row className="align-items-center">
+            <Col md={6}>
+              <h2 className="mb-4">Capacitación al personal de salud </h2>
+              <p style={{ textAlign: 'justify' }} className="text-muted">
+              Se realizo la capacitación al personal de salud para la implementación del sistema web
+              permitiendo al personal el correcto funcionamiento del sistema, reduciendo el tiempo de entrega de reportes al Ministerio de Salud Pública y Asistencia Social.
+              </p>
+              <div className="feature-icons mt-4 flex items-center space-x-4">
+  <img 
+    src={personalogo2} 
+    alt="react"
+    className="text-info" 
+    width="75"
+  />
+  <img 
+    src={personalogo1} 
+    alt="nodejs"
+    className="text-info" 
+    width="75" 
+  />
+</div>
+            </Col>
+            <Col md={6}>
+            <CarouselSectionPerson />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+</animated.section>
+
+
+
+
       <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
       
       <section className="mission-section py-3">
@@ -55,15 +98,15 @@ const Dashboard = () => {
               <div className="feature-icons mt-4">
                     <img src={nodeLogo} alt="nodejs"
                       className="text-info" 
-                      width="50" 
+                      width="75" 
                     />
                     <img src={reactLogo} alt="react"
                       className="text-info" 
-                      width="50"
+                      width="75"
                     />
                     <img src={postgresLogo} alt="PostgreSQL"
                       className="text-info" 
-                      width="50"
+                      width="75"
                     />
                   </div>
             </Col>
@@ -89,15 +132,15 @@ const Dashboard = () => {
               <div className="feature-icons mt-4">
                     <img src={nodeLogo} alt="nodejs"
                       className="text-info" 
-                      width="50" 
+                      width="75" 
                     />
                     <img src={reactLogo} alt="react"
                       className="text-info" 
-                      width="50"
+                      width="75"
                     />
                     <img src={postgresLogo} alt="PostgreSQL"
                       className="text-info" 
-                      width="50"
+                      width="75"
                     />
                   </div>
             </Col>
