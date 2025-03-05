@@ -88,7 +88,7 @@ const LandingPage = () => {
       {/* Key Features */}
       <animated.section style={featureProps} className="features-section bg-light py-5">
         <Container>
-          <h2 className="text-center mb-5">Por Qué Somos Importantes</h2>
+          <h2 className="text-center mb-5">Contribución en el desarrollo </h2>
           <Row>
             {[
               {
