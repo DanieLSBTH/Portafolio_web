@@ -21,7 +21,7 @@ const NavbarComponent = () => {
           <FaUserNurse /> <span>Contacto</span>
         </Link>
         <Link className="nav-link" to="/showusuario" onClick={handleClose}>
-          <FaUserNurse /> <span>Educacion</span>
+          <FaUserNurse /> <span>Educación</span>
         </Link>
         
        

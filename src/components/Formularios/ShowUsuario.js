@@ -80,7 +80,7 @@ const ShowUsuario = () => {
                 <p className="text-muted">Universidad Mariano Gálvez de Guatemala</p>
                 <p className="text-muted">2025</p>
                 <p>
-                 Estudiante de maestría 
+                Estudiante de maestría en seguridad informática con conocimientos en politicas y estándares de seguridad.
                 </p>
               </Card>
             </Col>
@@ -93,6 +93,16 @@ const ShowUsuario = () => {
                 <FontAwesomeIcon icon={faCertificate} className="me-2" />
                 Certificaciones
               </h3>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Scrum Fundamentals Certified | Fourth Edition</h4>
+                <p className="text-muted">SCRUMstudy Targeting success</p>
+                <p className="text-muted">2025</p>
+                <p className="text-muted">En proceso</p>
+                <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
+       
+              </Card>
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
@@ -126,7 +136,7 @@ const ShowUsuario = () => {
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
-                <h4>Amazon Relational Database Service for MySQL - Troubleshooting<br /><br /></h4>
+                <h4>Amazon Relational Database Service for MySQL - Troubleshooting</h4>
                 <p className="text-muted">AWS training certification</p>
                 <p className="text-muted">2025</p>
                 <Button color="primary" size="sm" onClick={() => openModal(logo15)}>

@@ -9,6 +9,11 @@ import nodeLogo from '../Images/images_banco/node.png';
 import oracleLogo from '../Images/images_banco/oracle.png';
 import personalogo1 from '../Images/images_banco/personlog1.png';
 import personalogo2 from '../Images/images_banco/personlog2.png';
+
+import router from '../Images/images_redes/router.png';
+import firewall from '../Images/images_redes/firewall.png';
+import server from '../Images/images_redes/server.png';
+
 import '../Css/educacion.css';
 
 import { Link } from 'react-router-dom';
@@ -17,6 +22,8 @@ import CarouselSection from '../Auth/CarouselSection'; // Importando el nuevo co
 import CarouselSectionfar from '../Auth/CarouselSectionfar'; // Importando el nuevo componente
 import CarouselSectionreco from '../Auth/CarouselSectionreco'; // Importando el nuevo componente
 import CarouselSectionPerson from '../Auth/CarouselSectionPerson'; // Importando el nuevo componente
+import CarouselSectionAcua from '../Auth/CarouselSectionAcua';
+
 
 import ReactPlayer from 'react-player';
 import logo from '../Images/backgrounds/fondo_antigua_1.png';
@@ -82,7 +89,6 @@ const Dashboard = () => {
 
 
 
-
       <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
       
       <section className="mission-section py-3">
@@ -117,6 +123,45 @@ const Dashboard = () => {
         </Container>
       </section>
       </animated.section>
+
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      
+      <section className="mission-section py-3">
+        <Container className="mt-0">
+          <Row className="align-items-center">
+            <Col md={6}>
+              <h2 className="mb-4">Mantenimiento y optimización de infraestructura de cableado estructurado </h2>
+              <p style={{ textAlign: 'justify' }} className="text-muted">
+              Analisis de terminales para gestionar los cambios que se necesitaban en el cableado de los 
+              firewall y routers hacia las computadoras y telefonos Ip </p>
+              <div className="feature-icons mt-4 flex items-center space-x-4">
+  <img 
+    src={router} 
+    alt="react"
+    className="text-info" 
+    width="75"
+  />
+  <img 
+    src={firewall} 
+    alt="nodejs"
+    className="text-info" 
+    width="75" 
+  />
+  <img 
+    src={server} 
+    alt="nodejs"
+    className="text-info" 
+    width="75" 
+  />
+</div>
+            </Col>
+            <Col md={6}>
+            <CarouselSectionAcua />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+</animated.section>
 
       <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
       
