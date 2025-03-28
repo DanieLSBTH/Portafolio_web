@@ -14,13 +14,13 @@ const NavbarComponent = () => {
   const NavContent = () => (
     <>
       <Nav className="me-auto nav-animate">
-        <Link className="nav-link" to="/dashboard" onClick={handleClose}>
+        <Link className="nav-link" to="/project" onClick={handleClose}>
           <FaChartLine /> <span>Proyectos</span>
         </Link>
-        <Link className="nav-link" to="/showpersonal" onClick={handleClose}>
+        <Link className="nav-link" to="/contact" onClick={handleClose}>
           <FaUserNurse /> <span>Contacto</span>
         </Link>
-        <Link className="nav-link" to="/showusuario" onClick={handleClose}>
+        <Link className="nav-link" to="/education" onClick={handleClose}>
           <FaUserNurse /> <span>Educación</span>
         </Link>
         

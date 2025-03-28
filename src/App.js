@@ -27,10 +27,10 @@ function App() {
           <Routes>
           <Route path="/" element={<Landpage />}/>
             
-            <Route path="/dashboard" element={<Dashboard /> }/>
-            <Route path="/showusuario" element={<ShowUsuario /> }/>
+            <Route path="/project" element={<Dashboard /> }/>
+            <Route path="/education" element={<ShowUsuario /> }/>
 
-            <Route path="/showpersonal" element={<ShowPersonal/> }/>
+            <Route path="/contact" element={<ShowPersonal/> }/>
             <Route path="/chatbotexample" element={<PrivateRoute><ChatBotExample /></PrivateRoute>}/>
             
           </Routes>
