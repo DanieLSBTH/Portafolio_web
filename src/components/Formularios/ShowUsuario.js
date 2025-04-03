@@ -23,6 +23,7 @@ import logo14 from '../Images/Cursos/AWS_FSE.jpg';
 import logo15 from '../Images/Cursos/AWS_MYSQL.jpg';
 import logo16 from '../Images/Cursos/AWS-Ransomware.jpg';
 import logo17 from '../Images/Cursos/Ciberseguridad-SUP.jpg'
+import logo18 from '../Images/Cursos/ScrumFunda.jpg'
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false); // Estado para controlar el modal
@@ -97,16 +98,6 @@ const ShowUsuario = () => {
             </Col>
             <Col md={4} className="mb-4">
               <Card className="p-4 shadow-sm">
-                <h4>Scrum Fundamentals Certified | Fourth Edition</h4>
-                <p className="text-muted">SCRUMstudy Targeting success</p>
-                <p className="text-muted">2025</p>
-                <p className="text-muted">En proceso</p>
-                <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
-       
-              </Card>
-            </Col>
-            <Col md={4} className="mb-4">
-              <Card className="p-4 shadow-sm">
                 <h4>Tecnico en Big Data <br /><br /></h4>
                 <p className="text-muted">Fundación Carlos Slim</p>
                 <p className="text-muted">2025</p>
@@ -123,6 +114,16 @@ const ShowUsuario = () => {
                 <p className="text-muted">En proceso</p>
                 <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
        
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Scrum Fundamentals Certified | Fourth Edition</h4>
+                <p className="text-muted">SCRUMstudy Targeting success</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo18)}>
+                  Ver Certificado
+                </Button>
               </Card>
             </Col>
             <Col md={4} className="mb-4">
