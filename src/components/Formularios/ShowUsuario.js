@@ -24,6 +24,9 @@ import logo15 from '../Images/Cursos/AWS_MYSQL.jpg';
 import logo16 from '../Images/Cursos/AWS-Ransomware.jpg';
 import logo17 from '../Images/Cursos/Ciberseguridad-SUP.jpg'
 import logo18 from '../Images/Cursos/ScrumFunda.jpg'
+import logo19 from '../Images/Cursos/Prevencion_delitos_Informaticos.jpg'
+import logo20 from '../Images/Cursos/EstrategiaclienteconIABAM.jpg'
+
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false); // Estado para controlar el modal
@@ -114,6 +117,26 @@ const ShowUsuario = () => {
                 <p className="text-muted">En proceso</p>
                 <ProgressBar mode="indeterminate" style={{ height: '6px' }}></ProgressBar>
        
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Estrategia de servicio y atención al cliente con IA</h4>
+                <p className="text-muted">BANTRAB|GUATEAPRENDE</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo20)}>
+                  Ver Certificado
+                </Button>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-4">
+              <Card className="p-4 shadow-sm">
+                <h4>Prevención de delitos cibernéticos</h4>
+                <p className="text-muted">Fundación Carlos Slim</p>
+                <p className="text-muted">2025</p>
+                <Button color="primary" size="sm" onClick={() => openModal(logo19)}>
+                  Ver Certificado
+                </Button>
               </Card>
             </Col>
             <Col md={4} className="mb-4">
