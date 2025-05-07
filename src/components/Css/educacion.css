@@ -1,52 +1,109 @@
-/* Estilos para el modal transparente */
+/* educación.css - Estilos para el componente de educación */
+
+.education-page {
+  padding-top: 20px;
+  background-color: #f8f9fa;
+}
+
+.education-section h2, 
+.education-section h3 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.education-section h4 {
+  font-weight: 600;
+  color: #495057;
+  font-size: 1.2rem;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilos para el modal de certificados */
 .modal-transparent .modal-content {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .modal-transparent .modal-header {
-    border: none;
-  }
-  
-  .modal-transparent .modal-body {
-    padding: 0;
-  }
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
 
-  /* Estilos para el botón de cerrar */
 .btn-close-custom {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
-    border: none;
-    color: white;
-    border-radius: 50%; /* Forma de círculo */
-    padding: 10px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.btn-close-custom:hover {
+  opacity: 1;
+}
+
+/* Estilos para la navegación de categorías */
+.certification-categories {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1.5rem;
+}
+
+.certification-categories .nav-link {
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.certification-categories .nav-link:hover {
+  color: #343a40;
+  border-bottom-color: #adb5bd;
+}
+
+.certification-categories .nav-link.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  background-color: transparent;
+}
+
+/* Asegurar que todas las cards tengan la misma altura */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el botón de Ver Certificado */
+.card .btn {
+  margin-top: auto;
+}
+
+/* Estilos para las imágenes de certificados en el modal */
+.modal-body img {
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+/* Estilos para el indicador de progreso */
+.p-progressbar.p-component {
+  margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certification-categories .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
   }
   
-  .btn-close-custom:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el mouse */
+  .card h4 {
+    font-size: 1.1rem;
   }
-/* Estilos para las tarjetas de proyectos */
-.project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos para el reproductor de video */
-.video-wrapper {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.custom-play-icon {
-  cursor: pointer;
-}
-.feature-icons {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* Ajusta este valor para cambiar el espacio */
 }
