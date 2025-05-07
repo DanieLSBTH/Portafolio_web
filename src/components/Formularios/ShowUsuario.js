@@ -10,6 +10,7 @@ import {
   faCode, 
   faCloudUploadAlt,
   faBrain,
+  faHeadset,
   faProjectDiagram,
   faTimes
 } from '@fortawesome/free-solid-svg-icons';
@@ -74,7 +75,8 @@ const ShowUsuario = () => {
     { id: 'data', name: 'Datos & IA', icon: faDatabase },
     { id: 'development', name: 'Desarrollo', icon: faCode },
     { id: 'cloud', name: 'Cloud', icon: faCloudUploadAlt },
-    { id: 'methodology', name: 'Metodologías', icon: faProjectDiagram }
+    { id: 'methodology', name: 'Metodologías', icon: faProjectDiagram },
+    { id: 'customer', name: 'Atención al Cliente', icon: faHeadset }
   ];
 
   // Certificaciones organizadas por categorías
@@ -269,6 +271,14 @@ const ShowUsuario = () => {
       category: "security",
       inProgress: true,
     },
+    //cliente
+    {
+      title: "Estrategia de servicio y atención al cliente con IA",
+      institution: "BANTRAB|GUATEAPRENDE",
+      year: "2025",
+      image: logo20,
+      category: "customer", // Asigna esta categoría a las certificaciones relacionadas
+    }
   ];
 
   // Filtrar certificaciones según la categoría seleccionada
