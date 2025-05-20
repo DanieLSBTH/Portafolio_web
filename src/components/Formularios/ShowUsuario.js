@@ -43,6 +43,8 @@ import logo22 from '../Images/Cursos/BIG-DATA-CRE.jpg';
 import logo23 from '../Images/Cursos/BIG-DATA-IA.jpg';
 import logo24 from '../Images/Cursos/DATA.jpg';
 import logo25 from '../Images/Cursos/ISO27001.jpg';
+import logo26 from '../Images/Cursos/learning.png'
+import logo27 from '../Images/Cursos/managment.png'
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -263,6 +265,20 @@ const ShowUsuario = () => {
       image: logo2,
       category: "academic",
     },
+     {
+      title: "Use Microsoft Teams Assignments in learning management systems",
+      institution: "Microsoft",
+      year: "2025",
+      image: logo26,
+      category: "academic", // Asigna esta categoría a las certificaciones relacionadas
+    },
+    {
+      title: "Set up the Teams Assignments LTI® app in learning management systems",
+      institution: "Microsoft",
+      year: "2025",
+      image: logo27,
+      category: "academic", // Asigna esta categoría a las certificaciones relacionadas
+    },
     {
       title: "Hacker ético",
       institution: "Cisco Networking Academy",
@@ -329,7 +345,7 @@ const ShowUsuario = () => {
             <Col md={12}>
               <h3 className="mb-4">
                 <FontAwesomeIcon icon={faCertificate} className="me-2" />
-                Certificaciones
+                Certificaciones/Diplomas
               </h3>
               <Nav tabs className="certification-categories mb-4">
                 {categories.map(category => (
