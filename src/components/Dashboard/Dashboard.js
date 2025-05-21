@@ -13,6 +13,7 @@ import personalogo2 from '../Images/images_banco/personlog2.png';
 import router from '../Images/images_redes/router.png';
 import firewall from '../Images/images_redes/firewall.png';
 import server from '../Images/images_redes/server.png';
+import canva from '../Images/Canva/Canvas.png'
 
 import '../Css/educacion.css';
 
@@ -23,7 +24,7 @@ import CarouselSectionfar from '../Auth/CarouselSectionfar'; // Importando el nu
 import CarouselSectionreco from '../Auth/CarouselSectionreco'; // Importando el nuevo componente
 import CarouselSectionPerson from '../Auth/CarouselSectionPerson'; // Importando el nuevo componente
 import CarouselSectionAcua from '../Auth/CarouselSectionAcua';
-
+import CarouselSectionCanva from '../Auth/CarouselSectionCanva';
 
 import ReactPlayer from 'react-player';
 import logo from '../Images/backgrounds/fondo_antigua_1.png';
@@ -52,6 +53,34 @@ const Dashboard = () => {
       {/* Hero Section */}
 
       {/* Mission Section */}
+
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      
+      <section className="mission-section py-3">
+        <Container className="mt-0">
+          <Row className="align-items-center">
+            <Col md={6}>
+              <h2 className="mb-4">Desarrollo de actividades para el learning management systems </h2>
+              <p style={{ textAlign: 'justify' }} className="text-muted">
+              Se realizo la práctica en Canva para el manejo de la plataforma estudiantil </p>
+              <div className="feature-icons mt-4 flex items-center space-x-4">
+  <img 
+    src={canva} 
+    alt="react"
+    className="text-info" 
+    width="75"
+  />
+ 
+</div>
+            </Col>
+            <Col md={6}>
+            <CarouselSectionCanva />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+</animated.section>
+
 
       <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
       

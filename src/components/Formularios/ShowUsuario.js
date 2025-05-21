@@ -45,6 +45,9 @@ import logo24 from '../Images/Cursos/DATA.jpg';
 import logo25 from '../Images/Cursos/ISO27001.jpg';
 import logo26 from '../Images/Cursos/learning.png'
 import logo27 from '../Images/Cursos/managment.png'
+import logo28 from '../Images/Cursos/Admin.jpg'
+import logo29 from '../Images/Cursos/Arquitecto.jpg'
+import logo30 from '../Images/Cursos/GExce.jpg'
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -184,6 +187,13 @@ const ShowUsuario = () => {
       image: logo11,
       category: "data",
     },
+     {
+      title: "Gestion de datos con Excel",
+      institution: "Camara de Comercio y Capacitación Internacional",
+      year: "2025",
+      image: logo30,
+      category: "data",
+    },
     // Desarrollo
     {
       title: "Curso C++",
@@ -266,17 +276,31 @@ const ShowUsuario = () => {
       category: "academic",
     },
      {
-      title: "Use Microsoft Teams Assignments in learning management systems",
+      title: "Module Use Microsoft Teams Assignments in learning management systems",
       institution: "Microsoft",
       year: "2025",
       image: logo26,
       category: "academic", // Asigna esta categoría a las certificaciones relacionadas
     },
     {
-      title: "Set up the Teams Assignments LTI® app in learning management systems",
+      title: "Module Set up the Teams Assignments LTI® app in learning management systems",
       institution: "Microsoft",
       year: "2025",
       image: logo27,
+      category: "academic", // Asigna esta categoría a las certificaciones relacionadas
+    },
+    {
+      title: "Administrador de plataformas digitales de aprendizaje",
+      institution: "Fundacion Carlos Slim",
+      year: "2025",
+      image: logo28,
+      category: "academic", // Asigna esta categoría a las certificaciones relacionadas
+    },
+    {
+      title: "Arquitecto de ambientes virtuales de aprendizaje",
+      institution: "Fundacion Carlos Slim",
+      year: "2025",
+      image: logo29,
       category: "academic", // Asigna esta categoría a las certificaciones relacionadas
     },
     {
