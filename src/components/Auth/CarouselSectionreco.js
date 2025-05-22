@@ -15,9 +15,9 @@ const carouselData = [
   { image: Image1, title: 'Login', description: 'Bienvenido al sistema de inicio' },
   { image: Image2, title: 'Inicio', description: 'Vista inicial de productos' },
   { image: Image3, title: 'Administración', description: 'Registro e inventario de productos' },
-  { image: Image4, title: 'Departamentos', description: 'Carrito de compras en el sistema' },
-  { image: Image5, title: 'Compartir archivos', description: 'Datos de clientes del sistema' },
-  { image: Image6, title: 'Archivos en la nube', description: 'Usuarios del sistema' },
+  { image: Image4, title: 'Departamentos', description: 'Departamento de ingreso del entorno de negocio' },
+  { image: Image5, title: 'Compartir archivos', description: 'Modulo de interaccion de carga de archivo de distintos departamentos' },
+  { image: Image6, title: 'Archivos en la nube', description: 'Archivos cargados en el sistema en conexión con los departamentos .' },
 ];
 
 
