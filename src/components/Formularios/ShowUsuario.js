@@ -48,6 +48,7 @@ import logo27 from '../Images/Cursos/managment.png'
 import logo28 from '../Images/Cursos/Admin.jpg'
 import logo29 from '../Images/Cursos/Arquitecto.jpg'
 import logo30 from '../Images/Cursos/GExce.jpg'
+import logo31 from '../Images/Cursos/HackerE.jpg'
 
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -88,7 +89,14 @@ const ShowUsuario = () => {
   const certifications = [
     // Seguridad
     {
-      title: "AUDITOR ISO 270001:2022 FUNDAMENTALS",
+      title: "Hacker ético",
+      institution: "Cisco Networking Academy",
+      year: "2025",
+      image: logo31,
+      category: "security",
+    },
+    {
+      title: "AUDITOR ISO 27001:2022 FUNDAMENTALS",
       institution: "Hacker Mentor",
       year: "2025",
       image: logo25,
@@ -303,14 +311,7 @@ const ShowUsuario = () => {
       image: logo29,
       category: "academic", // Asigna esta categoría a las certificaciones relacionadas
     },
-    {
-      title: "Hacker ético",
-      institution: "Cisco Networking Academy",
-      year: "2025",
-      image: null,
-      category: "security",
-      inProgress: true,
-    },
+    
     //cliente
     {
       title: "Estrategia de servicio y atención al cliente con IA",
