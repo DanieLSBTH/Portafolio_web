@@ -10,6 +10,8 @@ import logo2 from '../Images/backgrounds/Logos2.png';
 import CarouselSection from './CarouselSection'; // Importa el nuevo componente
 import ChatBotExample from '../ChatBot/ChatBotExample';
 import HeroSection from './HeroSection'; // Importa el nuevo componente
+import '../Css/LandPage.css'
+import logo3 from '../Images/backgrounds/wallpaper-girl.jpg';
 
 
 
@@ -125,24 +127,25 @@ const LandingPage = () => {
 
     
       {/* Call to Action */}
-      <section className="cta-section py-5 text-center bg-primary text-white">
-        <Container>
-          <h2 className="mb-4">Únete a la mejora de los sistemas web</h2>
-          <p className="lead mb-4">
-          Automatiza y mejora tu forma de trabajar con la ayuda de la teconlogia.
-          </p>
-          
-         {/* <div> 
-            <Button color="light" size="lg" className="mx-2" tag={Link} to="/donar">
-              Quiero Donar
-            </Button>
-            <Button color="outline-light" size="lg" className="mx-2" tag={Link} to="/contacto">
-              Contáctanos
-            </Button>
-          </div>*/}
-        </Container>
-      </section>
-      
+    <section 
+  className="cta-section-with-bg py-4 text-center text-white" // Cambié py-5 a py-4 para menos altura
+  style={{
+    backgroundImage: `url(${logo3})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center', // Centrada horizontal y verticalmente
+    backgroundAttachment: 'fixed' // Efecto parallax (se quita en móviles automáticamente)
+  }}
+>
+  <div className="bg-overlay-animated"></div>
+  <Container>
+    <div className="cta-content">
+      <h2 className="mb-3 cta-title-glow">Únete a la mejora de los sistemas web</h2>
+      <p className="lead mb-3"> {/* Cambié mb-4 a mb-3 para menos espaciado */}
+        Automatiza y mejora tu forma de trabajar con la ayuda de la tecnología.
+      </p>
+    </div>
+  </Container>
+</section>
       <ChatBotExample></ChatBotExample>
       
     </div>

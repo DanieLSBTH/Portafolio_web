@@ -22,7 +22,7 @@ const carouselData = [
 ];
 
 
-const CarouselSection = () => {
+const CarouselSectionMantenimiento = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = (eventKey) => {
@@ -66,4 +66,4 @@ const CarouselSection = () => {
   );
 };
 
-export default CarouselSection;
+export default CarouselSectionMantenimiento;

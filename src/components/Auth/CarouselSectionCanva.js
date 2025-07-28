@@ -24,7 +24,7 @@ const CarouselSectionCanva = () => {
   };
 
   return (
-    <section className="carousel-section py-5 bg-soft-pastel">
+    <section className="carousel-section ">
       <Container>
         <div className="text-center mb-4">
           <h2 className="fw-bold mb-3">Creación de práctica guiada por curso </h2>

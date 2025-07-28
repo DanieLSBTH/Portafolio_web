@@ -1,13 +1,84 @@
+/* TUS ESTILOS ACTUALES - MANTENER */
 .bg-soft-pastel {
-    background: linear-gradient(
-      135deg, 
-      rgba(77, 166, 217, 0.1), 
-      rgba(244, 181, 208, 0.1)
-    );
+  background: linear-gradient(
+    135deg, 
+    rgba(77, 166, 217, 0.1), 
+    rgba(244, 181, 208, 0.1)
+  );
+}
+
+.carousel-caption-custom {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* NUEVOS ESTILOS - OPCIÓN A OPTIMIZADA */
+.cta-section-with-bg {
+  position: relative;
+  min-height: 250px; /* Reducido de 400px a 250px */
+  overflow: hidden;
+  background-position: center center !important; /* Centrar imagen */
+  background-repeat: no-repeat !important;
+}
+
+.bg-overlay-animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(77, 166, 217, 0.7),
+    rgba(244, 181, 208, 0.7),
+    rgba(108, 99, 255, 0.7),
+    rgba(255, 107, 107, 0.7)
+  );
+  background-size: 400% 400%;
+  animation: overlayShift 8s ease infinite;
+}
+
+@keyframes overlayShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+}
+
+.cta-title-glow {
+  animation: titleGlowEffect 3s ease-in-out infinite alternate;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes titleGlowEffect {
+  from {
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.3);
   }
-  
-  .carousel-caption-custom {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 15px;
+  to {
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 40px rgba(255, 255, 255, 0.2);
   }
+}
+
+/* Mejora la legibilidad del texto */
+.cta-section-with-bg .lead {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cta-section-with-bg {
+    min-height: 200px; /* Aún más bajo en móviles */
+    background-attachment: scroll; /* Quita el parallax en móviles */
+  }
+}

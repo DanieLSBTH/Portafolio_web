@@ -1,31 +1,132 @@
-.snow-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
+/* Contenedor de partículas de seguridad */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Partículas de seguridad flotantes */
+.security-particle {
+  position: absolute;
+  opacity: 0.6;
+  z-index: 1;
+  animation: float linear infinite;
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.5));
+}
+
+/* Animación de flotación más sutil para tema profesional */
+@keyframes float {
+  0% {
+    transform: translateY(-20px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* Badges de especialidades */
+.security-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.badge-item {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 150, 255, 0.3));
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+}
+
+/* Contenedor de imagen con efectos */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Overlay de efecto de escaneo */
+.security-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Línea de escaneo animada */
+.scan-line {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(0, 212, 255, 0.8), 
+    rgba(0, 255, 150, 0.8), 
+    rgba(0, 212, 255, 0.8), 
+    transparent
+  );
+  animation: scan 3s linear infinite;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+}
+
+/* Efectos adicionales para pantallas más grandes */
+@media (min-width: 768px) {
+  .security-badges {
+    justify-content: flex-start;
   }
   
-  .snowflake {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.7;
-    z-index: 1;
-    animation: fall linear infinite;
+  .badge-item:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3), rgba(0, 150, 255, 0.4));
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
   }
-  
-  @keyframes fall {
-    0% {
-      transform: translateY(-10px) rotate(0deg);
-      opacity: 0.7;
-    }
-    100% {
-      transform: translateY(100vh) rotate(360deg);
-      opacity: 0;
-    }
+}
+
+/* Animación de pulso para elementos importantes */
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 10px rgba(0, 212, 255, 0.3);
   }
+  50% {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 0 0 20px rgba(0, 212, 255, 0.6);
+  }
+}
+
+/* Aplicar pulso al título principal */
+.display-4 {
+  animation: pulse 4s ease-in-out infinite;
+}
