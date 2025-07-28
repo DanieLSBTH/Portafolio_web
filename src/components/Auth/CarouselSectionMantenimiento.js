@@ -15,7 +15,7 @@ const carouselData = [
   { image: Image1, title: 'Control de Inventario', description: 'Visualización mejorada con consultas PostgreSQL optimizadas y indicadores en tiempo real' },
   { image: Image3, title: 'Gestión de Donadoras', description: 'UX/UI rediseñada con iconografía médica y accesibilidad mejorada' },
   { image: Image4, title: 'Analytics Avanzado', description: 'Dashboard estadístico con consultas optimizadas y métricas críticas hospitalarias' },
-  { image: Image2, title: 'Despacho Inteligente', description: 'Módulo con búsqueda avanzada y registro optimizado para workflow médico' },
+  { image: Image2, title: 'Despacho Inteligente', description: 'Módulo con búsqueda avanzada y registro optimizado para los procesos diarios médico' },
   { image: Image6, title: 'Componentes React', description: 'Modales refactorizados con mejor performance y UX responsiva' },
   { image: Image7, title: 'Reportes Automatizados', description: 'Sistema de generación de reportes con exportación y visualización interactiva' }
 
