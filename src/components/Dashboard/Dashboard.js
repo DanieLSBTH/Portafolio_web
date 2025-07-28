@@ -25,6 +25,7 @@ import CarouselSectionreco from '../Auth/CarouselSectionreco'; // Importando el 
 import CarouselSectionPerson from '../Auth/CarouselSectionPerson'; // Importando el nuevo componente
 import CarouselSectionAcua from '../Auth/CarouselSectionAcua';
 import CarouselSectionCanva from '../Auth/CarouselSectionCanva';
+import CarouselSectionMantenimiento from '../Auth/CarouselSectionMantenimiento';
 
 import ReactPlayer from 'react-player';
 import logo from '../Images/backgrounds/fondo_antigua_1.png';
@@ -54,7 +55,39 @@ const Dashboard = () => {
 
       {/* Mission Section */}
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
+      
+      <section className="mission-section py-3">
+        <Container className="mt-0">
+          <Row className="align-items-center">
+            <Col md={6}>
+              <h2 className="mb-4">Mantenimiento al sistema web con nueva interfaz y busquedas </h2>
+              <p style={{ textAlign: 'justify' }} className="text-muted">
+              Se realizo el mantenimiento al sistema mejorando la interfaz grafica y las consultas en el backend con nuevos indices en PostgreSQL  </p>
+              <div className="feature-icons mt-4">
+                    <img src={nodeLogo} alt="nodejs"
+                      className="text-info" 
+                      width="75" 
+                    />
+                    <img src={reactLogo} alt="react"
+                      className="text-info" 
+                      width="75"
+                    />
+                    <img src={postgresLogo} alt="PostgreSQL"
+                      className="text-info" 
+                      width="75"
+                    />
+                  </div>
+            </Col>
+            <Col md={6}>
+            <CarouselSectionMantenimiento />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+</animated.section>
+
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
@@ -82,7 +115,7 @@ const Dashboard = () => {
 </animated.section>
 
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
@@ -118,7 +151,7 @@ const Dashboard = () => {
 
 
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
@@ -153,7 +186,7 @@ const Dashboard = () => {
       </section>
       </animated.section>
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
@@ -192,7 +225,7 @@ const Dashboard = () => {
       </section>
 </animated.section>
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
@@ -226,7 +259,7 @@ const Dashboard = () => {
       </section>
       </animated.section>
 
-      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section bg-light py-5">
+      <animated.section style={{ ...featureProps, marginTop: '-20px' }} className="features-section  py-5">
       
       <section className="mission-section py-3">
         <Container className="mt-0">
