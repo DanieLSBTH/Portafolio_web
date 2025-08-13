@@ -12,7 +12,8 @@ import {
   faBrain,
   faHeadset,
   faProjectDiagram,
-  faTimes
+  faTimes,
+  faCogs
 } from '@fortawesome/free-solid-svg-icons';
 import { useSpring, animated } from '@react-spring/web';
 import '../Css/educacion.css';
@@ -49,7 +50,9 @@ import logo28 from '../Images/Cursos/Admin.jpg'
 import logo29 from '../Images/Cursos/Arquitecto.jpg'
 import logo30 from '../Images/Cursos/GExce.jpg'
 import logo31 from '../Images/Cursos/HackerE.jpg'
-
+import logo32 from '../Images/Cursos/IntelligentAutomation.jpg'
+import logo33 from '../Images/Cursos/MasteringIntelligent.jpg'
+import logo34 from '../Images/Cursos/Operation2Build.jpg'
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -82,11 +85,35 @@ const ShowUsuario = () => {
     { id: 'development', name: 'Desarrollo', icon: faCode },
     { id: 'cloud', name: 'Cloud', icon: faCloudUploadAlt },
     { id: 'methodology', name: 'Metodologías', icon: faProjectDiagram },
-    { id: 'customer', name: 'Atención al Cliente', icon: faHeadset }
+    { id: 'customer', name: 'Atención al Cliente', icon: faHeadset },
+    { id: 'automatization', name: 'Automatización / RPA', icon: faCogs }
   ];
 
   // Certificaciones organizadas por categorías
   const certifications = [
+//automatizacion
+    {
+    title: "Introduction to Blue Prism Intelligent Automation",
+    institution: "SS&C Blue Prism University",
+    year: "2025",
+    image: logo32, // tu imagen correspondiente
+    category: "automatization",
+  },
+  {
+    title: "ROM™ 2 Operations: Building your Support Model",
+    institution: "SS&C Blue Prism University", 
+    year: "2025",
+    image: logo33, // tu imagen correspondiente
+    category: "automatization",
+  },
+  {
+    title: "Scaling Success - Mastering Intelligent Automation for Growth",
+    institution: "SS&C Blue Prism University",
+    year: "2025", 
+    image: logo34, // tu imagen correspondiente
+    category: "automatization",
+  },
+
     // Seguridad
     {
       title: "Hacker ético",
