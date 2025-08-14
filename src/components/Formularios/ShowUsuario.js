@@ -53,6 +53,7 @@ import logo31 from '../Images/Cursos/HackerE.jpg'
 import logo32 from '../Images/Cursos/IntelligentAutomation.jpg'
 import logo33 from '../Images/Cursos/MasteringIntelligent.jpg'
 import logo34 from '../Images/Cursos/Operation2Build.jpg'
+import logo35 from '../Images/Cursos/pentesting.jpg'
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -115,6 +116,13 @@ const ShowUsuario = () => {
   },
 
     // Seguridad
+    {
+      title: "Pentesting Pro",
+      institution: "Hacker Mentor",
+      year: "2025",
+      image: logo35,
+      category: "security",
+    },
     {
       title: "Hacker ético",
       institution: "Cisco Networking Academy",
