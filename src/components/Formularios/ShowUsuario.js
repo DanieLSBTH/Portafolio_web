@@ -54,6 +54,7 @@ import logo32 from '../Images/Cursos/IntelligentAutomation.jpg'
 import logo33 from '../Images/Cursos/MasteringIntelligent.jpg'
 import logo34 from '../Images/Cursos/Operation2Build.jpg'
 import logo35 from '../Images/Cursos/pentesting.jpg'
+import logo36 from '../Images/Cursos/forense.jpg'
 const ShowUsuario = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -116,6 +117,13 @@ const ShowUsuario = () => {
   },
 
     // Seguridad
+    {
+      title: "Informática Forense",
+      institution: "Progenios",
+      year: "2025",
+      image: logo36,
+      category: "security",
+    },
     {
       title: "Pentesting Pro",
       institution: "Hacker Mentor",
